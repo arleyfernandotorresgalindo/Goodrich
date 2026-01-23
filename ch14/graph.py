@@ -40,7 +40,9 @@ class Graph:
 
     def __str__(self):
       return str(self._element)
-    
+
+    def __repr__(self):
+      return str(self._element)    
   #------------------------- nested Edge class -------------------------
   class Edge:
     """Lightweight edge structure for a graph."""
@@ -71,6 +73,9 @@ class Graph:
       return hash( (self._origin, self._destination) )
 
     def __str__(self):
+      return '({0},{1},{2})'.format(self._origin,self._destination,self._element)
+
+    def __repr__(self):
       return '({0},{1},{2})'.format(self._origin,self._destination,self._element)
     
   #------------------------- Graph methods -------------------------
