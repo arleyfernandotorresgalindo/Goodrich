@@ -19,7 +19,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from ..ch09.pq import HeapPriorityQueue,AdaptableHeapPriorityQueue
+from ..ch09.heap_priority_queue import HeapPriorityQueue
+from ..ch09.adaptable_heap_priority_queue import AdaptableHeapPriorityQueue
 from .partition import Partition
 
 def MST_PrimJarnik(g):

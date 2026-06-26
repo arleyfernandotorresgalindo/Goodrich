@@ -19,7 +19,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from collections import MutableMapping
+try:
+  from collections.abc import MutableMapping   # Python 3.10+
+except ImportError:
+  from collections import MutableMapping        # Python <= 3.9
 
 class MapBase(MutableMapping):
   """Our own abstract base class that includes a nonpublic _Item class."""

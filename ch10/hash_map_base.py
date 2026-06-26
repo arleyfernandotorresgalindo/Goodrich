@@ -20,7 +20,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from .map_base import MapBase
-from collections import MutableMapping
+try:
+  from collections.abc import MutableMapping   # Python 3.10+
+except ImportError:
+  from collections import MutableMapping        # Python <= 3.9
 from random import randrange         # used to pick MAD parameters
 
 class HashMapBase(MapBase):
