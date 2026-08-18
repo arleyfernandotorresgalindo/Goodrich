@@ -19,6 +19,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from .array_stack import ArrayStack
+
 def is_matched(expr):
   """Return True if all delimiters are properly match; False otherwise."""
   lefty = '({['                               # opening delimiters

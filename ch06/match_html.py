@@ -19,6 +19,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from .array_stack import ArrayStack
+
 def is_matched_html(raw):
   """Return True if all HTML tags are properly match; False otherwise."""
   S = ArrayStack()
